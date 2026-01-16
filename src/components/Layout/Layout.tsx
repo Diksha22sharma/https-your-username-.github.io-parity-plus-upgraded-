@@ -12,7 +12,7 @@ interface LayoutProps {
 
 export default function Layout({ children, insights = [], onInsightClick }: LayoutProps) {
   const [collapsed, setCollapsed] = useState(false)
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-surface-elevated">

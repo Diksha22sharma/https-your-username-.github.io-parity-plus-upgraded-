@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Overview, { mockInsights } from './pages/Overview'
 import Reports from './pages/Reports'
@@ -61,6 +61,7 @@ function AppContent() {
             />
           } 
         />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>
   )
