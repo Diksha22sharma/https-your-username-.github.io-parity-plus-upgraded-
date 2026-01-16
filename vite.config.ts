@@ -6,7 +6,7 @@ export default defineConfig(({ command }) => ({
   base:
     command === 'serve'
       ? '/'
-      : '/https-your-username-.github.io-parity-plus-upgraded-/',
+      : '/parity-plus-upgraded/',
 }))
 
 
